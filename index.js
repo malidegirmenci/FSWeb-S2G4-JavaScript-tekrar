@@ -76,19 +76,19 @@ console.log(`Çemberin alanı: ${CemberinAlani(3,pi)}`)
 	var ucetambolunenler, enkucuk, enbuyuk, ucebolunenlerintoplami, besyuzdenkucuksayilar, siralisayilar, tekraredensayilar;
 	
 	//3a çözümü
-	let minNum = sayilar[0]
-	let maxNum = sayilar[0]
+	var enkucuk = sayilar[0]
+	var enbuyuk = sayilar[0]
 	for(let num of sayilar){
-		if(minNum > num){
-			minNum = num
+		if(enkucuk > num){
+			enkucuk = num
 		}
 	}
 	for(let num of sayilar){
-		if(maxNum < num){
-			maxNum = num
+		if(enbuyuk < num){
+			enbuyuk = num
 		}
 	}
-	console.log(`Minimum sayı: ${minNum} Maksimum Sayı: ${maxNum}`)
+	console.log(`Minimum sayı: ${enkucuk} Maksimum Sayı: ${enbuyuk}`)
 	
 	// 3b çözümü:
 	var ucetambolunenler = []
@@ -100,17 +100,19 @@ console.log(`Çemberin alanı: ${CemberinAlani(3,pi)}`)
 	console.log(`3'e tam bölünenler: ${ucetambolunenler}`)
 
 		
-		
-		
 	//3c çözümü:
-	
-	/* kodlar buraya */
-
+	var ucebolunenlerintoplami = ucetambolunenler.reduce((acc,item) => {
+		return acc + item
+	})
+	console.log(`3'e tam bölünenlerin toplamı: ${ucebolunenlerintoplami}`)
 	
 	
 	//3d çözümü
 	
-	/* kodlar buraya */
+	var besyuzdenkucuksayilar = sayilar.filter((item)=>{
+		return item < 500
+	})
+	console.log(`500'den küçük sayılar ${besyuzdenkucuksayilar}`)
 
 
 
@@ -122,12 +124,6 @@ console.log(`Çemberin alanı: ${CemberinAlani(3,pi)}`)
 	//3f çözümü
 	
 	/* kodlar buraya */
-
-
-
-
-	
-		
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 function sa(){
