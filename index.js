@@ -18,7 +18,7 @@ function KareninAlani(kenaruzunlugu){
 }
 
 /* (Oto test yok) Yukarıdaki KareninAlani fonksiyonunu kenar uzunluğu = 10 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
-console.log(KareninAlani(10))
+console.log(`Karenin Alanı: ${KareninAlani(10)}`)
 
 
 /* 	GÖREV 1:  
@@ -32,7 +32,7 @@ console.log(KareninAlani(10))
 function CemberinCevresi(r){
 	return 2 * pi * r
 }
-console.log(CemberinCevresi(3))
+console.log(`Çemberin çevresi: ${CemberinCevresi(5)}`)
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -47,10 +47,10 @@ console.log(CemberinCevresi(3))
 			4. Hesaplanan çemberin alanı döndürülecektir.
 		*/
 		
-function CemberinAlani(/* kodlar buraya */){
-	/* kodlar buraya */
+function CemberinAlani(r,pi){
+	return pi * Math.pow(r,2)
 }
-
+console.log(`Çemberin alanı: ${CemberinAlani(3,pi)}`)
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -76,14 +76,29 @@ function CemberinAlani(/* kodlar buraya */){
 	var ucetambolunenler, enkucuk, enbuyuk, ucebolunenlerintoplami, besyuzdenkucuksayilar, siralisayilar, tekraredensayilar;
 	
 	//3a çözümü
-
-	/* kodlar buraya */
-	
-	
+	let minNum = sayilar[0]
+	let maxNum = sayilar[0]
+	for(let num of sayilar){
+		if(minNum > num){
+			minNum = num
+		}
+	}
+	for(let num of sayilar){
+		if(maxNum < num){
+			maxNum = num
+		}
+	}
+	console.log(`Minimum sayı: ${minNum} Maksimum Sayı: ${maxNum}`)
 	
 	// 3b çözümü:
+	var ucetambolunenler = []
+	sayilar.forEach((item)=>{
+		if(item % 3 === 0){
+			ucetambolunenler.push(item)
+		}
+	})
+	console.log(`3'e tam bölünenler: ${ucetambolunenler}`)
 
-	/* kodlar buraya */
 		
 		
 		
