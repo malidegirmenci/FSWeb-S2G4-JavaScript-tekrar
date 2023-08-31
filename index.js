@@ -18,7 +18,7 @@ function KareninAlani(kenaruzunlugu){
 }
 
 /* (Oto test yok) Yukarıdaki KareninAlani fonksiyonunu kenar uzunluğu = 10 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
-
+console.log(KareninAlani(10))
 
 
 /* 	GÖREV 1:  
@@ -29,10 +29,10 @@ function KareninAlani(kenaruzunlugu){
 			4. Hesaplanan çemberin çevresi döndürülecektir.
 		*/
 
-function CemberinCevresi(/* kodlar buraya */){
-	/* kodlar buraya */
+function CemberinCevresi(r){
+	return 2 * pi * r
 }
-
+console.log(CemberinCevresi(3))
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
