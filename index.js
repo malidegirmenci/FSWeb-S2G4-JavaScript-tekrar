@@ -138,7 +138,8 @@ function CemberinAlani(r,pi){
 	keys.forEach(key => {
 		tekraredensayilar.push(`${key} sayısı ${repeatedNumbers[key]} kere tekrar edilmiştir`)
 	})
-	console.log(tekraredensayilar)
+
+	//console.log(tekraredensayilar)
 	
 	// Bonus: Fiz, Buzz, FizzBuzz
 /* ucetambolunenler dizisindeki ilk 20 sayı için, 
@@ -146,15 +147,21 @@ function CemberinAlani(r,pi){
 	5'e bölünebilen sayılar için "Buzz", 
 	hem 3'e hem 5'e bölünebilen sayılar için "FizzBuzz" yazdırın.
 
-	for(let num of ucetambolunenler){
-		if(num % 3 == 0 && num % 5 == 0){
-			console.log(num,": FizzBuzz")
-		}else if(num % 5 == 0){
-			console.log(num,": Buzz")
-		}else{
-			console.log(num,": Fizz")
-		}
-	}
+let nums = []
+tekraredensayilar.forEach((str) => {
+	nums.push(str.split(" ")[0])
+})
+for(let num of nums){
+	if(num % 3 == 0 && num % 5 == 0){
+		console.log(num,": FizzBuzz")
+	}else if(num % 5 == 0){
+		console.log(num,": Buzz")
+	}else if(num % 3 == 0){
+		console.log(num,": Fizz")
+	}else{
+		console.log(num)
+	}	
+}
 */
 
 /*Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
