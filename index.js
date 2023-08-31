@@ -118,7 +118,7 @@ function CemberinAlani(r,pi){
 
 	//3e çözümü
 
-	var siralisayilar = besyuzdenkucuksayilar.sort((a, b) => a-b)
+	var siralisayilar = [...besyuzdenkucuksayilar].sort((a, b) => a-b)
 	//console.log(`500'den küçük sıralı sayılar ${siralisayilar}`)
 	
 	//3f çözümü
@@ -133,14 +133,31 @@ function CemberinAlani(r,pi){
 		repeatedObj[num] = numCount[num];
 		return repeatedObj
 	},{})
+	
 	const keys = Object.keys(repeatedNumbers)
 	keys.forEach(key => {
 		tekraredensayilar.push(`${key} sayısı ${repeatedNumbers[key]} kere tekrar edilmiştir`)
 	})
 	console.log(tekraredensayilar)
 	
+	// Bonus: Fiz, Buzz, FizzBuzz
+/* ucetambolunenler dizisindeki ilk 20 sayı için, 
+	3'e bölünebilen sayılar için "Fizz", 
+	5'e bölünebilen sayılar için "Buzz", 
+	hem 3'e hem 5'e bölünebilen sayılar için "FizzBuzz" yazdırın.
 
-/*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
+	for(let num of ucetambolunenler){
+		if(num % 3 == 0 && num % 5 == 0){
+			console.log(num,": FizzBuzz")
+		}else if(num % 5 == 0){
+			console.log(num,": Buzz")
+		}else{
+			console.log(num,": Fizz")
+		}
+	}
+*/
+
+/*Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 function sa(){
     console.log('Kodlar çalışıyor');
     return 'as';
