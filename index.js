@@ -18,7 +18,7 @@ function KareninAlani(kenaruzunlugu){
 }
 
 /* (Oto test yok) Yukarıdaki KareninAlani fonksiyonunu kenar uzunluğu = 10 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
-console.log(`Karenin Alanı: ${KareninAlani(10)}`)
+///console.log(`Karenin Alanı: ${KareninAlani(10)}`)
 
 
 /* 	GÖREV 1:  
@@ -32,7 +32,7 @@ console.log(`Karenin Alanı: ${KareninAlani(10)}`)
 function CemberinCevresi(r){
 	return 2 * pi * r
 }
-console.log(`Çemberin çevresi: ${CemberinCevresi(5)}`)
+//console.log(`Çemberin çevresi: ${CemberinCevresi(5)}`)
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -50,7 +50,7 @@ console.log(`Çemberin çevresi: ${CemberinCevresi(5)}`)
 function CemberinAlani(r,pi){
 	return pi * Math.pow(r,2)
 }
-console.log(`Çemberin alanı: ${CemberinAlani(3,pi)}`)
+//console.log(`Çemberin alanı: ${CemberinAlani(3,pi)}`)
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -71,7 +71,7 @@ console.log(`Çemberin alanı: ${CemberinAlani(3,pi)}`)
 	
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
-
+	//console.log(`sayilar dizisinde ${sayilar.length} adet sayı vardır`)
 
 	var ucetambolunenler, enkucuk, enbuyuk, ucebolunenlerintoplami, besyuzdenkucuksayilar, siralisayilar, tekraredensayilar;
 	
@@ -88,7 +88,7 @@ console.log(`Çemberin alanı: ${CemberinAlani(3,pi)}`)
 			enbuyuk = num
 		}
 	}
-	console.log(`Minimum sayı: ${enkucuk} Maksimum Sayı: ${enbuyuk}`)
+	//console.log(`Minimum sayı: ${enkucuk} Maksimum Sayı: ${enbuyuk}`)
 	
 	// 3b çözümü:
 	var ucetambolunenler = []
@@ -97,14 +97,14 @@ console.log(`Çemberin alanı: ${CemberinAlani(3,pi)}`)
 			ucetambolunenler.push(item)
 		}
 	})
-	console.log(`3'e tam bölünenler: ${ucetambolunenler}`)
+	//console.log(`3'e tam bölünenler: ${ucetambolunenler}`)
 
 		
 	//3c çözümü:
 	var ucebolunenlerintoplami = ucetambolunenler.reduce((acc,item) => {
 		return acc + item
 	})
-	console.log(`3'e tam bölünenlerin toplamı: ${ucebolunenlerintoplami}`)
+	//console.log(`3'e tam bölünenlerin toplamı: ${ucebolunenlerintoplami}`)
 	
 	
 	//3d çözümü
@@ -112,18 +112,18 @@ console.log(`Çemberin alanı: ${CemberinAlani(3,pi)}`)
 	var besyuzdenkucuksayilar = sayilar.filter((item)=>{
 		return item < 500
 	})
-	console.log(`500'den küçük sayılar ${besyuzdenkucuksayilar}`)
+	//console.log(`500'den küçük sayılar ${besyuzdenkucuksayilar}`)
 
 
 
 	//3e çözümü
 
-	/* kodlar buraya */
-	
+	var siralisayilar = besyuzdenkucuksayilar.sort((a, b) => a-b)
+	//console.log(`500'den küçük sıralı sayılar ${siralisayilar}`)
 	
 	//3f çözümü
 	
-	/* kodlar buraya */
+	
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 function sa(){
