@@ -122,7 +122,22 @@ function CemberinAlani(r,pi){
 	//console.log(`500'den küçük sıralı sayılar ${siralisayilar}`)
 	
 	//3f çözümü
+	var tekraredensayilar = [];
 	
+	const numCount = sayilar.reduce((countObj, num) =>{
+		countObj[num] = (countObj[num] || 0) + 1;
+		return countObj;
+	},{});
+
+	const repeatedNumbers = Object.keys(numCount).filter(num => numCount[num]>1).reduce((repeatedObj, num) => {
+		repeatedObj[num] = numCount[num];
+		return repeatedObj
+	},{})
+	const keys = Object.keys(repeatedNumbers)
+	keys.forEach(key => {
+		tekraredensayilar.push(`${key} sayısı ${repeatedNumbers[key]} kere tekrar edilmiştir`)
+	})
+	console.log(tekraredensayilar)
 	
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
